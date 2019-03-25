@@ -234,14 +234,10 @@ h1 {
 	padding-top: 40px;
 }
 
-aside {
+article {
 	display: block;
 	text-align: center;
-	letter-spacing: .25px;
-	padding-right: 65px;
-	padding-left: 65px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 52px;
 	font-size: 14px;
 }
 
@@ -296,30 +292,24 @@ p {
 			padding-bottom: 20px;
 		}
 
-		#pages {
-			display: flex;
-			flex-wrap: wrap;
-			}
-
 		aside {
-			flex: 1;
-			margin: 0;
-			}
-
-		aside p {
+			width: 40%;
+			margin-top: 10%;
+			float: right;
+			clear: both;
 			text-align: left;
-			margin-left: 10%;
-			}
-
-		#home-photo {
-			margin-top: 25%;
-			}
-
-		section {
-			flex: 2;
+			margin-top: -35%;
 		}
 
-		aside { order: 1; }
-		section { order: 2; }
+		article {
+			width: 50%;
+			float: left;
+			margin: auto;
+			padding: 50px;
+		}
+
+		#shoe-photo {
+			margin-top: 15%;
+			margin-bottom: 5%;
 		}
 	}
