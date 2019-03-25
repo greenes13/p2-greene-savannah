@@ -72,6 +72,101 @@ footer a:hover {
 	opacity: .6 !important;
 }
 
+/* Accordian */
+
+.accordion {
+  background-color: #fff;
+  color: #251D5B;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+}
+
+.panel {
+	text-align: left;
+  padding: 10px 60px;
+  display: none;
+  background-color: #E5E6EA;
+  overflow: hidden;
+	line-height: 25px;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 14px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+/* Popup Ad */
+
+.popup {
+  position: relative;
+  display: block;
+	width: 30%;
+	margin: auto;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	background-color: #251D5B;
+	border-radius: 10px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.popup h2 {
+		color: #fff;
+		font-size: 14px;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+	margin: auto;
+  background-color: #283A87;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
 /* Navigation */
 
 #desktop-menu {
@@ -195,6 +290,15 @@ a:-webkit-any-link {
 
 /* Site Design */
 
+.about {
+	padding-bottom: 20px;
+}
+
+#route {
+	width: 70%;
+	margin: auto;
+}
+
 body {
 	font-family: 'Playfair Display', serif;
 	font-size: .8rem;
@@ -246,6 +350,22 @@ p {
 	margin: 15px;
 }
 
+h2 {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	color: #251D5B;
+	padding: 10px;
+}
+
+button {
+	text-align: left;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	color: #fff;
+	background-color: #251D5B;
+}
+
 /* Media queries */
 
  @media(min-width: 500px){
@@ -294,7 +414,6 @@ p {
 
 		aside {
 			width: 40%;
-			margin-top: 10%;
 			float: right;
 			clear: both;
 			text-align: left;
@@ -311,5 +430,31 @@ p {
 		#shoe-photo {
 			margin-top: 15%;
 			margin-bottom: 5%;
+		}
+
+		#route {
+			width: 50%;
+			margin-top: -27%;
+		}
+
+		.popup {
+		  position: relative;
+		  display: block;
+			width: 20%;
+			margin: auto;
+		  cursor: pointer;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+			background-color: #251D5B;
+			border-radius: 10px;
+			color: #fff;
+			margin-bottom: 30px;
+		}
+
+		.popup h2 {
+				color: #fff;
+				font-size: 24px;
 		}
 	}
